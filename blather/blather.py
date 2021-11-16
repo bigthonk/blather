@@ -2,7 +2,8 @@ import torch
 from torch.utils.data import Dataset, DataLoader, random_split, RandomSampler, SequentialSampler
 from transformers import GPT2LMHeadModel,  GPT2Tokenizer, GPT2Config, GPT2LMHeadModel
 from transformers import AdamW, get_linear_schedule_with_warmup
-
+import random
+import numpy as np
 
 class Blather():
     
@@ -69,7 +70,6 @@ class Blather():
 
             print('Training...')
 
-            t0 = time.time()
 
             total_train_loss = 0
 
@@ -104,7 +104,7 @@ class Blather():
 
             print("Running Validation...")
 
-            t0 = time.time()
+      
 
             self.model.eval()
 
