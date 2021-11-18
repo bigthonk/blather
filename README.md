@@ -13,7 +13,9 @@ Fine tuning large generative language models in tractable time require the use o
 ## Usage
 
 ```python
-import blather
+from blather import Blather
+
+blather = Blather()
 
 # fine tunes an appropriate model on your dataset
 blather.read(['Text Examples One', 'Second Text Example'... 'Text Example k'])
