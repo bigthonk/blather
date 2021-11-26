@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='blather',
-    version='0.0.8',
+    version='1.0.0',
     packages=['blather'],
     install_requires=[
         'torch',
