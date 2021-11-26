@@ -160,9 +160,25 @@ class Blather():
                                         num_return_sequences=3
                                         )
 
-        return self.tokenizer.decode(sample_outputs[0], skip_special_tokens=True)  
-    
+        return self.tokenizer.decode(sample_outputs[0], skip_special_tokens=True)
 
+    def save(self, file_location):
+        if file_location[-2:]=="pt":
+            torch.save(self.model, file_location)
+            return None
+        else :
+            print("File must be a torch file in the format model.pt")
+            return None
+
+    def load(self, file_location):
+        if file_location[-2:]=="pt":
+            self.model = torch.load(file_location)
+            self.model.eval()
+            return None
+        else :
+            print("File must be a torch file in the format model.pt")
+            return None
+    
     class GPT2Dataset(Dataset):
 
     
