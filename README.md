@@ -1,6 +1,10 @@
+[![Build Status](https://app.travis-ci.com/bigthonk/blather.svg?branch=main)](https://app.travis-ci.com/bigthonk/blather)
+
 # blather
 
 Train and use generative text models in a few lines of code.
+
+https://app.travis-ci.com/bigthonk/blather.svg?branch=main
 
 ## Installation
 
