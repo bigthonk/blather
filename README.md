@@ -4,6 +4,8 @@
 
 Train and use generative text models in a few lines of code.
 
+To see blather in action check out https://github.com/bigthonk/blather_demo and launch the colab notebook!
+
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install blather. 
