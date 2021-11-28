@@ -8,7 +8,6 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install blather
 ```bash
 pip install blather
 ```
-Fine tuning large generative language models in tractable time require the use of at least a single GPU. For the time being running blather on a CPU only system will cause errors. This may be addressed in the future
 
 ## Usage
 
