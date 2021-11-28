@@ -12,7 +12,7 @@ class Blather():
         self.configuration = GPT2Config.from_pretrained('gpt2', output_hidden_states=False)
         self.model = GPT2LMHeadModel.from_pretrained("gpt2", config=self.configuration)
         self.model.resize_token_embeddings(len(self.tokenizer))
-        self.device = torch.device("cuda")
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.model.to(self.device)
     
     def read(self, data, epochs=1, batch_size = 4):
