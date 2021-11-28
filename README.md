@@ -4,8 +4,6 @@
 
 Train and use generative text models in a few lines of code.
 
-https://app.travis-ci.com/bigthonk/blather.svg?branch=main
-
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install blather. 
