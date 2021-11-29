@@ -89,7 +89,7 @@ class Blather():
                     if step == 0:
                         start = time.time()
                     if step == 1:
-                        total_time_estimate = round((time.time()-start) * epochs * (total_steps-1)/60)
+                        total_time_estimate = round((time.time()-start) * (total_steps-1)/60)
                         print("Estimated Training time of " + str(total_time_estimate) + " minutes ")
                 b_input_ids = batch[0].to(self.device)
                 b_labels = batch[0].to(self.device)
