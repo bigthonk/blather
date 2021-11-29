@@ -1,6 +1,10 @@
+[![Build Status](https://app.travis-ci.com/bigthonk/blather.svg?branch=main)](https://app.travis-ci.com/bigthonk/blather)
+
 # blather
 
 Train and use generative text models in a few lines of code.
+
+To see blather in action check out https://github.com/bigthonk/blather_demo and launch the colab notebook!
 
 ## Installation
 
