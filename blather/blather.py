@@ -17,6 +17,14 @@ class Blather():
         self.model.to(self.device)
     
     def read(self, data, epochs=1, batch_size = 4):
+
+        # We expect data to be passed as a list of strings representing sentences, we can add in a capability to read a .txt file 
+        if isinstance(data,str):
+            if data[-3:] == "txt":
+                with open(data, "r") as file:
+                    content = file.read().replace('\n','')
+                data = list(map(str.strip, content.split(".")))
+
         dataset = self.GPT2Dataset(data, tokenizer=self.tokenizer, max_length=103)
 
         train_size = int(0.9 * len(dataset))
