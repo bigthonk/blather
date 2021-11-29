@@ -20,8 +20,8 @@ from blather import Blather
 
 blather = Blather()
 
-# fine tunes an appropriate model on your dataset, can be provided as either a list of strings or a single string representing a .txt file
-blather.read(['Text Examples One', 'Second Text Example'... 'Text Example k'])
+# fine tunes an appropriate model on your dataset
+blather.read("example_dataset.txt")
 
 # returns a text sample generated from the model
 blather.write('Sample text to complete')
