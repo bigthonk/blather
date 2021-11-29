@@ -4,6 +4,7 @@ from transformers import GPT2LMHeadModel,  GPT2Tokenizer, GPT2Config, GPT2LMHead
 from transformers import AdamW, get_linear_schedule_with_warmup
 import random
 import numpy as np
+import time
 
 class Blather():
     
@@ -76,7 +77,12 @@ class Blather():
             self.model.train()
 
             for step, batch in enumerate(train_dataloader):
-
+                if epoch_i == 0:
+                    if step == 0:
+                        start = time.time()
+                    if step == 1:
+                        total_time_estimate = round((time.time()-start) * epochs * (total_steps-1)/60)
+                        print("Estimated Training time of " + str(total_time_estimate) + " minutes ")
                 b_input_ids = batch[0].to(self.device)
                 b_labels = batch[0].to(self.device)
                 b_masks = batch[1].to(self.device)
