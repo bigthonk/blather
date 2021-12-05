@@ -4,7 +4,10 @@
 
 Train and use generative text models in a few lines of code.
 
-To see blather in action check out https://github.com/bigthonk/blather_demo and launch the colab notebook!
+To see blather in action check out the colab notebook!
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bigthonk/blather_demo/blob/main/BlatherDemo.ipynb)
+
 
 ## Installation
 
